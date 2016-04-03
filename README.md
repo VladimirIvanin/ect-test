@@ -55,12 +55,12 @@ $(function(){
     ]
   };
 
-  //Рендер шаблона в контейнер
+  //Рендер шаблона в контейнер .js-output
   /*
     Берем ранее созданный объект ECT и вызываем в нём метод рендер 
     в который передаём id шаблона и наш JSON с данными
   */
-  $('.js-output').html(renderer.render( 'list', $data ))
+  $('.js-output').html( renderer.render( 'list', $data ) );
 });
 ```
 
