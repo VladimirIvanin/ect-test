@@ -1,5 +1,7 @@
 # Тестовый вариант использования шаблонизатора ECT.js
 
+### HTML
+
 ```html
 <div class="wrap">
   <!-- Конейнер для вывода -->
@@ -22,9 +24,10 @@
 </script>
 ```
 
+### Js
+
 ```js
 $(function(){
-
   //renderer - объект ECT
   //renderer содержит root в котором хранятся id и html шаблонов
   //В нашем случае один шаблон <script type="text/template" hidden id="list">
@@ -53,7 +56,34 @@ $(function(){
   };
 
   //Рендер шаблона в контейнер
-  //Берем ранее созданный объект ECT и вызываем в нём метод рендер в который передаём id шаблона и наш JSON с данными
+  /*
+    Берем ранее созданный объект ECT и вызываем в нём метод рендер 
+    в который передаём id шаблона и наш JSON с данными
+  */
   $('.js-output').html(renderer.render( 'list', $data ))
 });
+```
+
+### Результат
+
+```html
+<div class="js-output">    
+  <div class="news-list">
+    <div class="news-item">
+      <strong>новость 1</strong>
+      <br>
+      <small>1 апреля 2015</small>
+    </div>
+    <div class="news-item">
+      <strong>новость 2</strong>
+      <br>
+      <small>2 апреля 2015</small>
+    </div>
+    <div class="news-item">
+      <strong>новость 3</strong>
+      <br>
+      <small>3 апреля 2015</small>
+    </div>
+  </div>
+</div>
 ```
