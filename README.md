@@ -106,7 +106,7 @@ function render(data){
     $('.news-list').append(
       $("<div/>", {
         "class": "news-item",
-        "html": "<strong>" + news[i].title + '</strong><br><small>'+news[i].date +'</small>'
+        "html": "<strong>" + news[i].title + '</strong><br><small>' + news[i].date + '</small>'
       })
       )
   }
