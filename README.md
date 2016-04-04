@@ -93,3 +93,22 @@ $(function(){
   </div>
 </div>
 ```
+
+### Как тоже самое может выглядеть на jQuery
+
+```js
+function render(data){
+  var news = data['news'];
+  $('.js-output').append($("<div/>", {
+    "class": "news-list"
+  }))
+  for (var i = 0; i < news.length; i++) {
+    $('.news-list').append(
+      $("<div/>", {
+        "class": "news-item",
+        "html": "<strong>" + news[i].title + '</strong><br><small>'+news[i].date +'</small>'
+      })
+      )
+  }
+}
+```
