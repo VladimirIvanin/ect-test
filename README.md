@@ -6,6 +6,8 @@
 
 [Пример посложнее](https://github.com/brainmurder/ect-js-test).
 
+[Документация для InSales](http://www.insales.ru/collection/funktsional-js/product/funktsional-js-js-shablonizator).
+
 ## Пример использования
 
 ### HTML
