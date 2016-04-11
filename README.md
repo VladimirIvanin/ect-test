@@ -2,9 +2,9 @@
 
 В файл **ect.js** сразу добавлен CoffeeScript.
 
-Сайт шаблонизатора - [ectjs.com](http://ectjs.com/)
+Сайт шаблонизатора - [ectjs.com](http://ectjs.com/).
 
-[Пример посложнее](https://github.com/brainmurder/ect-js-test)
+[Пример посложнее](https://github.com/brainmurder/ect-js-test).
 
 ## Пример использования
 
